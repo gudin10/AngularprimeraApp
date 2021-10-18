@@ -11,6 +11,8 @@ import { AsideComponent } from './aside/aside.component';
 import { InfoComponent } from './info/info.component';
 import { FormsModule } from '@angular/forms';
 import { ArticulosComponent } from './articulos/articulos.component';
+import { DadoComponent } from './dado/dado.component';
+import { CronometroComponent } from './cronometro/cronometro.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ArticulosComponent } from './articulos/articulos.component';
     AsideComponent,
     InfoComponent,
     ArticulosComponent,
+    DadoComponent,
+    CronometroComponent,
   ],
   imports: [
     BrowserModule,

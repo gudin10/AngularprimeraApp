@@ -33,7 +33,6 @@ export class ArticulosComponent{
 
     modificarArticulo(){
       
-      
       this.articulos[this.arselect].codigo=this.codigoInput;
       this.articulos[this.arselect].descripcion=this.descripcionInput;
       this.articulos[this.arselect].precio=this.precioInput;
@@ -56,7 +55,8 @@ export class ArticulosComponent{
     }
     
     borrarArticulo(i:number){
-      alert('Está seguro de eliminarlo');
+      this.arselect=i;
+      alert('¿Está seguro de eliminar el articulo ,'+this.articulos[this.arselect].descripcion+'?');
       //let articulo1= new Articulo(this.codigoInput,this.descripcionInput,this.precioInput);
       this.articulos.splice(i,1);
       console.log(i);
